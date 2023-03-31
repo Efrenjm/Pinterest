@@ -10,25 +10,24 @@
 <body>
     <header>
         <nav class="primary">
-            <div><img src="images/pinterest-round-color-icon.svg" alt="Logo" style="height: 50px;"></div>
+            <!-- <div class="menu"><img src="images/pinterest-round-color-icon.svg" alt="Logo" class="icon"></div> -->
             <ul>
-                <li class="menu">Inicio</li>
-                <li class="menu">Hoy</li>
-                <li class="menu">Crear</li>
+                <li class="menu iconic"><img src="images/pinterest_logo.svg" alt="Logo" class="icon"></li>
+                <li class="menu textonic" id="inicio">Inicio</li>
+                <li class="menu textonic" id="hoy">Hoy</li>
+                <li class="menu textonic" id="crear">Crear</li>
             </ul>
 
-            <form role="search" aria-label="site">
-                <label>
-                    <span>Search</span>
-                    <input type="search" />
-                </label>
-                <button type="submit">Submit</button>
+            <form role="search" aria-label="site" class="search">
+                <input type="search" placeholder="Search" class="search"/>
             </form>
 
             <ul>
-                <li class="menu"><img src="images/bell-icon.svg" alt="notifications" style="height: 50px;"></li>
-                <li class="menu"><img src="images/Design 3-30-2023 01.11 a.m..svg" alt="messages" style="height: 50px;"></li>
-                <li class="menu"><div></div></li>
+                <li class="menu iconic"><img src="images/bell-icon.svg" alt="notifications" class="icon"></li>
+                <li class="menu iconic"><img src="images/bubble-icon.svg" alt="messages" class="icon"></li>
+                <li class="menu iconic"><div class="circle">E</div></li>
+                <li class="menu"><div class="iconic circle extra">&rang;</div></li>
+                
             </ul>
         </nav>
 
