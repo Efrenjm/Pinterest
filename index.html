@@ -11,11 +11,12 @@
     <header>
         <nav class="primary">
             <ul>
-                <li class="menu iconic"><img src="images/pinterest_logo.svg" alt="Logo" class="icon"></li>
+                <li class="menu iconic" onclick="location.href = '/index.html';"><img src="images/pinterest_logo.svg" alt="Logo" style="height:25px"></li>
+                <!-- <li class="menu iconic"><img src="images/pinterest_logo.svg" alt="Logo" class="icon"></li> -->
                 <li class="menu textonic" id="inicio">Inicio</li>
                 <li class="menu textonic" id="hoy">Hoy</li>
                 <li class="menu textonic tooltip">
-                    <p>Crear&nbsp;</p><img style="height: 10px;" src="images/dropdown.svg">
+                    <p>Crear&nbsp;&nbsp;</p><img style="height: 12px;" src="images/dropdown.svg">
                     <div class="bottom dropdown hoverable">
                         <ul>
                             <li class="tooltip"><p class="hoverable">Crear un Idea Pin</p></li>
@@ -25,45 +26,48 @@
                 </li>
             </ul>
 
-            <form role="search" aria-label="site" class="search">
+            <form role="search" class="search">
                 <input type="search" placeholder="Search" class="search"/>
             </form>
 
             <ul>
                 <li class="menu iconic tooltip">
-                    <img src="images/bell-icon.svg" alt="notifications" class="icon">
+                    <img src="images/bell-icon.svg" alt="notifications" style="height:25px">
                     <div class="bottom hoverable"><p>Notificaciones</p></div>
                 </li>
                 <li class="menu iconic tooltip">
-                    <img src="images/bubble-icon.svg" alt="messages" class="icon">
+                    <img src="images/bubble-icon.svg" alt="messages" style="height:25px">
                     <div class="bottom hoverable"><p>Mensajes</p></div>
                 </li>
                 <li class="menu iconic tooltip">
-                    <div class="circle" style="background-color:#e8e8e9;">E</div>
+                    <div class="circle">E</div>
                     <div class="bottom hoverable"><p>Tu perfil</p></div>
                 </li>
-                <li class="menu">
-                    <div class="iconic circle extra tooltip" id="extra">
+                <li class="circle iconic tooltip" id="extra">
+                    <img style="height: 10px;" src="images/dropdown.svg">
+                    <div class="bottom hoverable"><p>Cuentas<br>y más<br>opciones</p></div>
+                </li>
+                <!-- <li class="menu">
+                    <div class="circle iconic tooltip" id="extra">
                         <img style="height: 10px;" src="images/dropdown.svg">
-
                         <div class="bottom hoverable"><p>Cuentas<br>y más<br>opciones</p></div>
                     </div>
-                </li>
+                </li> -->
             </ul>
 
         </nav>
 
 
     </header>
-    <!-- section.feed>div*15.picture>div>img[src="https://picsum.photos/250/350?random=$"]+div>button{Guardar}.save+div>(div.iconic.circle>img[src="images/share.svg" alt="share" style="height:12px;"].icon.share)+div.iconic.circle>img[src="images/more.svg" alt="more"].icon.more -->
+    <!-- section.feed>div*15.picture>img[src="https://picsum.photos/250/350?random=$"]+div.over>button{Guardar}.save+ul>.iconic.circle>img[src="images/share.svg" alt="share" style="height:12px;"].share^.iconic.circle>img[src="images/more.svg" alt="more" style="height:25px;"].more -->
     <section class="feed">
         <div class="picture">
             <img src="https://picsum.photos/250/350?random=1" alt="">
             <div class="over">
                 <button class="save">Guardar</button>
                 <ul>
-                    <li class="iconic circle" style="background-color:#e8e8e9;"><img src="images/share.svg" alt="share" style="height:12px;" class="icon share"></li>
-                    <li class="iconic circle" style="background-color:#e8e8e9;"><img src="images/more.svg" alt="more" class="icon more"></li>
+                    <li class="iconic circle"><img src="images/share.svg" alt="share" style="height:12px;" class="share"></li>
+                    <li class="iconic circle"><img src="images/more.svg" alt="more" style="height:25px;" class="more"></li>
                 </ul>
             </div>
         </div>
@@ -72,8 +76,8 @@
             <div class="over">
                 <button class="save">Guardar</button>
                 <ul>
-                    <li class="iconic circle" style="background-color:#e8e8e9;"><img src="images/share.svg" alt="share" style="height:12px;" class="icon share"></li>
-                    <li class="iconic circle" style="background-color:#e8e8e9;"><img src="images/more.svg" alt="more" class="icon more"></li>
+                    <li class="iconic circle"><img src="images/share.svg" alt="share" style="height:12px;" class="share"></li>
+                    <li class="iconic circle"><img src="images/more.svg" alt="more" style="height:25px;" class="more"></li>
                 </ul>
             </div>
         </div>
@@ -82,28 +86,28 @@
             <div class="over">
                 <button class="save">Guardar</button>
                 <ul>
-                    <li class="iconic circle" style="background-color:#e8e8e9;"><img src="images/share.svg" alt="share" style="height:12px;" class="icon share"></li>
-                    <li class="iconic circle" style="background-color:#e8e8e9;"><img src="images/more.svg" alt="more" class="icon more"></li>
+                    <li class="iconic circle"><img src="images/share.svg" alt="share" style="height:12px;" class="share"></li>
+                    <li class="iconic circle"><img src="images/more.svg" alt="more" style="height:25px;" class="more"></li>
                 </ul>
             </div>
         </div>
         <div class="picture">
-            <img src="https://picsum.photos/250/350?random=4" alt="">
+            <img src="https://picsum.photos/250/400?random=4" alt="">
             <div class="over">
                 <button class="save">Guardar</button>
                 <ul>
-                    <li class="iconic circle" style="background-color:#e8e8e9;"><img src="images/share.svg" alt="share" style="height:12px;" class="icon share"></li>
-                    <li class="iconic circle" style="background-color:#e8e8e9;"><img src="images/more.svg" alt="more" class="icon more"></li>
+                    <li class="iconic circle"><img src="images/share.svg" alt="share" style="height:12px;" class="share"></li>
+                    <li class="iconic circle"><img src="images/more.svg" alt="more" style="height:25px;" class="more"></li>
                 </ul>
             </div>
         </div>
         <div class="picture">
-            <img src="https://picsum.photos/250/350?random=5" alt="">
+            <img src="https://picsum.photos/250/450?random=5" alt="">
             <div class="over">
                 <button class="save">Guardar</button>
                 <ul>
-                    <li class="iconic circle" style="background-color:#e8e8e9;"><img src="images/share.svg" alt="share" style="height:12px;" class="icon share"></li>
-                    <li class="iconic circle" style="background-color:#e8e8e9;"><img src="images/more.svg" alt="more" class="icon more"></li>
+                    <li class="iconic circle"><img src="images/share.svg" alt="share" style="height:12px;" class="share"></li>
+                    <li class="iconic circle"><img src="images/more.svg" alt="more" style="height:25px;" class="more"></li>
                 </ul>
             </div>
         </div>
@@ -112,8 +116,8 @@
             <div class="over">
                 <button class="save">Guardar</button>
                 <ul>
-                    <li class="iconic circle" style="background-color:#e8e8e9;"><img src="images/share.svg" alt="share" style="height:12px;" class="icon share"></li>
-                    <li class="iconic circle" style="background-color:#e8e8e9;"><img src="images/more.svg" alt="more" class="icon more"></li>
+                    <li class="iconic circle"><img src="images/share.svg" alt="share" style="height:12px;" class="share"></li>
+                    <li class="iconic circle"><img src="images/more.svg" alt="more" style="height:25px;" class="more"></li>
                 </ul>
             </div>
         </div>
@@ -122,28 +126,28 @@
             <div class="over">
                 <button class="save">Guardar</button>
                 <ul>
-                    <li class="iconic circle" style="background-color:#e8e8e9;"><img src="images/share.svg" alt="share" style="height:12px;" class="icon share"></li>
-                    <li class="iconic circle" style="background-color:#e8e8e9;"><img src="images/more.svg" alt="more" class="icon more"></li>
+                    <li class="iconic circle"><img src="images/share.svg" alt="share" style="height:12px;" class="share"></li>
+                    <li class="iconic circle"><img src="images/more.svg" alt="more" style="height:25px;" class="more"></li>
                 </ul>
             </div>
         </div>
         <div class="picture">
-            <img src="https://picsum.photos/250/350?random=8" alt="">
+            <img src="https://picsum.photos/250/250?random=8" alt="">
             <div class="over">
                 <button class="save">Guardar</button>
                 <ul>
-                    <li class="iconic circle" style="background-color:#e8e8e9;"><img src="images/share.svg" alt="share" style="height:12px;" class="icon share"></li>
-                    <li class="iconic circle" style="background-color:#e8e8e9;"><img src="images/more.svg" alt="more" class="icon more"></li>
+                    <li class="iconic circle"><img src="images/share.svg" alt="share" style="height:12px;" class="share"></li>
+                    <li class="iconic circle"><img src="images/more.svg" alt="more" style="height:25px;" class="more"></li>
                 </ul>
             </div>
         </div>
         <div class="picture">
-            <img src="https://picsum.photos/250/350?random=9" alt="">
+            <img src="https://picsum.photos/250/500?random=9" alt="">
             <div class="over">
                 <button class="save">Guardar</button>
                 <ul>
-                    <li class="iconic circle" style="background-color:#e8e8e9;"><img src="images/share.svg" alt="share" style="height:12px;" class="icon share"></li>
-                    <li class="iconic circle" style="background-color:#e8e8e9;"><img src="images/more.svg" alt="more" class="icon more"></li>
+                    <li class="iconic circle"><img src="images/share.svg" alt="share" style="height:12px;" class="share"></li>
+                    <li class="iconic circle"><img src="images/more.svg" alt="more" style="height:25px;" class="more"></li>
                 </ul>
             </div>
         </div>
@@ -152,8 +156,8 @@
             <div class="over">
                 <button class="save">Guardar</button>
                 <ul>
-                    <li class="iconic circle" style="background-color:#e8e8e9;"><img src="images/share.svg" alt="share" style="height:12px;" class="icon share"></li>
-                    <li class="iconic circle" style="background-color:#e8e8e9;"><img src="images/more.svg" alt="more" class="icon more"></li>
+                    <li class="iconic circle"><img src="images/share.svg" alt="share" style="height:12px;" class="share"></li>
+                    <li class="iconic circle"><img src="images/more.svg" alt="more" style="height:25px;" class="more"></li>
                 </ul>
             </div>
         </div>
@@ -162,8 +166,8 @@
             <div class="over">
                 <button class="save">Guardar</button>
                 <ul>
-                    <li class="iconic circle" style="background-color:#e8e8e9;"><img src="images/share.svg" alt="share" style="height:12px;" class="icon share"></li>
-                    <li class="iconic circle" style="background-color:#e8e8e9;"><img src="images/more.svg" alt="more" class="icon more"></li>
+                    <li class="iconic circle"><img src="images/share.svg" alt="share" style="height:12px;" class="share"></li>
+                    <li class="iconic circle"><img src="images/more.svg" alt="more" style="height:25px;" class="more"></li>
                 </ul>
             </div>
         </div>
@@ -172,8 +176,8 @@
             <div class="over">
                 <button class="save">Guardar</button>
                 <ul>
-                    <li class="iconic circle" style="background-color:#e8e8e9;"><img src="images/share.svg" alt="share" style="height:12px;" class="icon share"></li>
-                    <li class="iconic circle" style="background-color:#e8e8e9;"><img src="images/more.svg" alt="more" class="icon more"></li>
+                    <li class="iconic circle"><img src="images/share.svg" alt="share" style="height:12px;" class="share"></li>
+                    <li class="iconic circle"><img src="images/more.svg" alt="more" style="height:25px;" class="more"></li>
                 </ul>
             </div>
         </div>
@@ -182,8 +186,8 @@
             <div class="over">
                 <button class="save">Guardar</button>
                 <ul>
-                    <li class="iconic circle" style="background-color:#e8e8e9;"><img src="images/share.svg" alt="share" style="height:12px;" class="icon share"></li>
-                    <li class="iconic circle" style="background-color:#e8e8e9;"><img src="images/more.svg" alt="more" class="icon more"></li>
+                    <li class="iconic circle"><img src="images/share.svg" alt="share" style="height:12px;" class="share"></li>
+                    <li class="iconic circle"><img src="images/more.svg" alt="more" style="height:25px;" class="more"></li>
                 </ul>
             </div>
         </div>
@@ -192,8 +196,8 @@
             <div class="over">
                 <button class="save">Guardar</button>
                 <ul>
-                    <li class="iconic circle" style="background-color:#e8e8e9;"><img src="images/share.svg" alt="share" style="height:12px;" class="icon share"></li>
-                    <li class="iconic circle" style="background-color:#e8e8e9;"><img src="images/more.svg" alt="more" class="icon more"></li>
+                    <li class="iconic circle"><img src="images/share.svg" alt="share" style="height:12px;" class="share"></li>
+                    <li class="iconic circle"><img src="images/more.svg" alt="more" style="height:25px;" class="more"></li>
                 </ul>
             </div>
         </div>
@@ -202,31 +206,15 @@
             <div class="over">
                 <button class="save">Guardar</button>
                 <ul>
-                    <li class="iconic circle" style="background-color:#e8e8e9;"><img src="images/share.svg" alt="share" style="height:12px;" class="icon share"></li>
-                    <li class="iconic circle" style="background-color:#e8e8e9;"><img src="images/more.svg" alt="more" class="icon more"></li>
+                    <li class="iconic circle"><img src="images/share.svg" alt="share" style="height:12px;" class="share"></li>
+                    <li class="iconic circle"><img src="images/more.svg" alt="more" style="height:25px;" class="more"></li>
                 </ul>
             </div>
         </div>
     </section>
-    <section class="feed">
-        <div class="picture"><img src="https://picsum.photos/250/350?random=1"></div>
-        <div class="picture"><img src="https://picsum.photos/250/350?random=2"></div>
-        <div class="picture"><img src="https://picsum.photos/250/350?random=3"></div>
-        <div class="picture"><img src="https://picsum.photos/250/350?random=4"></div>
-        <div class="picture"><img src="https://picsum.photos/250/350?random=5"></div>
-        <div class="picture"><img src="https://picsum.photos/250/350?random=6"></div>
-        <div class="picture"><img src="https://picsum.photos/250/350?random=7"></div>
-        <div class="picture"><img src="https://picsum.photos/250/350?random=8"></div>
-        <div class="picture"><img src="https://picsum.photos/250/350?random=9"></div>
-        <div class="picture"><img src="https://picsum.photos/250/350?random=10"></div>
-        <div class="picture"><img src="https://picsum.photos/250/350?random=11"></div>
-        <div class="picture"><img src="https://picsum.photos/250/350?random=12"></div>
-        <div class="picture"><img src="https://picsum.photos/250/350?random=13"></div>
-        <div class="picture"><img src="https://picsum.photos/250/350?random=14"></div>
-        <div class="picture"><img src="https://picsum.photos/250/350?random=15"></div>
-        
-    </section>
 
+    </section>
+    
 
 </body>
 </html>

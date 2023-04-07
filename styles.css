@@ -7,6 +7,7 @@ body{
     margin: 0;
     margin-bottom: 30px;
 }
+
 header{
     position: -webkit-sticky;
     position: sticky;
@@ -29,6 +30,8 @@ ul{
 .primary>ul {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
     margin: 0 0 0 15px;
     padding: 0;
 }
@@ -46,9 +49,8 @@ ul{
     font-size: 18px;
     padding-left: 20px;
     padding-right: 20px;
+    cursor: pointer;
 }
-
-
 .search{
     flex: auto;
 }
@@ -56,13 +58,11 @@ input[type=search] {
     height: var(--header-height);
     width: 100%;
     overflow: auto;
-    /* flex-shrink: 2; */
     border-radius: var(--icon-height);
     border: none;
     background-color: #e9e8e8;
     background-image: url('images/search.svg');
     background-position: calc(var(--icon-height)/2.5) calc(var(--icon-height)/2.5);
-    /* background-repeat: no-repeat; */
     padding-left: calc(var(--icon-height)*1.5);
     background-repeat: no-repeat;
     background-size: var(--icon-height);
@@ -75,20 +75,29 @@ input[type=search]:focus{
     padding-left: 25px;
     background-image: none;
     outline: none;
-    box-shadow: 0 0 0 4px rgb(140,188,251);
+    box-shadow: 0 0 0 4px #8cbcfb;
 }
-
-
 .iconic{
     width: var(--icon-height);
 }
-.iconic:hover{
-    background-color: rgba(197, 197, 197, 0.6);
+
+.circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    width: var(--icon-height);
+    height: var(--icon-height);
+    background-color:#e8e8e9;
 }
+/* .menu>.circle:last-child{
+    background-color: #fff;
+} */
 
-
-
-
+.iconic:hover{
+    background-color: #c5c5c599;
+    cursor: pointer;
+}
 .tooltip {
     position: relative;
     white-space: nowrap;
@@ -112,27 +121,9 @@ input[type=search]:focus{
     display:block;
 }
 
-
-/* .dropdown{
-    color: #000000;
-    background-color:#ffffff;
-    font-size: 18px;
-}
-.dropdown::selection{
-    display: block;
-} */
-
-.circle{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 100%;
-    width: var(--icon-height);
-    height: var(--icon-height);
-}
-.icon{
+/* .icon{
     height: 25px;
-}
+} */
 #inicio{
     color: #ffffff;
     background-color: #000000;
@@ -140,60 +131,37 @@ input[type=search]:focus{
 
 .feed{
     margin: 0 50px;
-    /* display: flex;
-    flex-wrap: wrap; */
     display: grid;
-    grid-template-columns: repeat(5, 250px);
-    grid-template-rows: repeat(2,auto);
+    grid-template-columns: repeat(3, 250px);
     grid-gap: 20px;
-    /* grid: auto-flow dense 1px / repeat(5, 250px);
-    grid-row: span 800; */
-    /* grid-auto-flow:row; */
+    justify-content: center;
 }
-/* .picture>img{
-    border-radius: 20px;
-} */
-/* .picture:hover{
-
-    background-color: #000000;
-} */
-/* .picture{
-    display: inline-block;
-} */
-/* .picture{
-    background-color: aqua;
-    background-image: url(https://picsum.photos/250/700);
-    background-repeat: no-repeat;
-} */
-
 .picture{
-    /* display: block; */
+    height: fit-content;
     position: relative;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: space-between; */
 }
 .picture>img{
     border-radius: 25px;
+    /* object-fit:none; */
 }
 .over{
-    height: 320px;
+    height: calc(100% - 33px);
     width: 220px;
     position: absolute;
     top: 0;
     left: 0;
     padding: 15px;
-    /* display: flex;
-    flex-direction: column;
-    align-items: end;
-    justify-content: space-between; */
+    background-color: #00000045;
+    border-radius: 25px;
     display: none;
+    
 }
 .picture:hover>.over{
     display: flex;
     flex-direction: column;
     align-items: end;
     justify-content: space-between;
+    cursor: zoom-in;
 }
 .save{
     font-size: 18px;
@@ -206,7 +174,17 @@ input[type=search]:focus{
 }
 .save:hover{
     background-color: #ac2424;
+    cursor: pointer;
 }
+/* .picture:hover .over{
+    height: auto;
+    background-color: #0000002c;
+    border-radius: 25px;
+} */
+/* .over:hover{
+    background-color: #0000002c;
+    border-radius: 25px;
+} */
 .over>ul {
     display: flex;
     flex-direction: row;
@@ -215,5 +193,11 @@ input[type=search]:focus{
     gap: 10px;
 }
 .over>ul>li:hover{
-    background-color: #f0f1f1;
+    background-color: #c5c5c599;
+}
+
+@media (min-width: 600px) {
+    .facet_sidebar {
+      display: none;
+    }
 }
