@@ -10,7 +10,8 @@
     <!-- <link rel="mask-icon" href="images/pinterest_logo.svg?v=M44lzPylqQ" color="#000000"> -->
 </head>
 <body>
-    <header>
+    <script src="script.js"></script>
+    <header id="webHeader">
         <nav class="primary">
             <ul>
                 <li class="menu iconic" onclick="location.href = '/index.html';"><img src="images/pinterest_logo.svg" alt="Logo" style="height:25px"></li>
@@ -49,18 +50,25 @@
                     <img style="height: 10px;" src="images/dropdown.svg">
                     <div class="bottom">Cuentas<br> y más <br>opciones</div>
                 </li>
-                <!-- <li class="menu">
-                    <div class="circle iconic " id="extra">
-                        <img style="height: 10px;" src="images/dropdown.svg">
-                        <div class="bottom hoverable"><p>Cuentas<br>y más<br>opciones</p></div>
-                    </div>
-                </li> -->
             </ul>
-
         </nav>
-
+    </header>
+    <header id="mobileHeader">
+        <ul>
+            <li class="menu" id="leftHeader">
+                <img src="images/pinterest_logo.svg" alt="Logo" style="height:25px">
+                <div>
+                    <h1 style="font-size: 12px; margin:0;">Pinterest</h1>
+                    <p style="font-size: 12px; color:darkgrey; margin:0;">Abrir en la app Pinterest</p>
+                </div>
+            </li>
+            <li class="">
+                <button id="appRedirection">ABRIR</button>
+            </li>
+        </ul>
 
     </header>
+
     <!-- section.feed>div*15.picture>img[src="https://picsum.photos/235/350?random=$"]+div.over>button{Guardar}.save+ul>.iconic.circle>img[src="images/share.svg" alt="share" style="height:12px;"].share^.iconic.circle>img[src="images/more.svg" alt="more" style="height:25px;"].more -->
     <section class="feed">
         <div class="picture">
@@ -219,6 +227,14 @@
     <div class="iconic ask">?
         <p class="bottom">Más</p>
     </div>
+    <footer>
+        <ul>
+            <li class=""><img src="images/home.svg" alt="Home" style="height:25px"></li>
+            <li class=""><img src="images/search.svg" alt="Search" style="height:24px"></li>
+            <li class=""><img src="images/bubble-icon.svg" alt="Inbox" style="height:25px"></li>
+            <li class=""><img src="images/profile.svg" alt="Profile" style="height:25px"></li>
+        </ul>
+    </footer>
 
 </body>
 </html>
